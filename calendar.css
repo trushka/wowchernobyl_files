@@ -190,9 +190,7 @@
 	content: '›';
 }
 
-.custom-header nav span:hover:not(:active):before {
-	/* color: #bf6b03; */
-	/* transform: scale(1, 1.2); */
+.hover-enabled .custom-header nav span:hover:before {
 	filter: brightness(0.7);
 }
 
@@ -312,7 +310,7 @@
 	color: #fff;
 	box-shadow: 0 0 1px 1px #b67e11;
 }
-.fc-calendar .fc-row > div:not(.fc-inactive):not(.fc-selected):not(:empty):hover:not(:active){
+.hover-enabled .fc-calendar .fc-row > div:not(.fc-inactive):not(.fc-selected):not(:empty):hover{
 	color: #e69a07;
 	box-shadow: 0 0 1px 1px;
 	z-index: 1;
