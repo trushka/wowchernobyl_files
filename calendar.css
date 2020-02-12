@@ -27,7 +27,7 @@
 	height: -moz-calc(100% - 30px);
 	height: -webkit-calc(100% - 30px);
 	height: calc(100% - 30px);
-	border: 1px solid #ddd;
+	/* border: 1px solid #e69a07; */
 }
 
 .fc-calendar .fc-row {
@@ -126,7 +126,7 @@
 	margin: 0px 29px;
 	height: 75px;
 	position: relative;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #e69a07;
 }
 
 .custom-header h2,
@@ -155,7 +155,7 @@
 	height: 30px;
 	cursor: pointer;
 	margin: 0 1px;
-	font-size: 32px;
+	font-size: 35px;
 	line-height: 30px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -166,11 +166,11 @@
 }
 
 .custom-header nav span:first-child {
-	left: -5px;
+	left: -6px;
 }
 
 .custom-header nav span:last-child {
-	right: -5px;
+	right: -6px;
 }
 
 .custom-header nav span:before {
@@ -178,19 +178,22 @@
 	position: absolute;
 	text-align: center;
 	width: 100%;
-	color: #555;
+	color: #e69a07;
+	transition: .2s;
 }
 
 .custom-header nav span.custom-prev:before {
-	content: '\25c2';
+	content: '‹';
 }
 
 .custom-header nav span.custom-next:before {
-	content: '\25b8';
+	content: '›';
 }
 
 .custom-header nav span:hover:before {
-	color: #e69a07;
+	/* color: #bf6b03; */
+	/* transform: scale(1, 1.2); */
+	filter: brightness(0.7);
 }
 
 .custom-content-reveal {
@@ -268,7 +271,7 @@
 .fc-calendar-container {
 	height: 400px;
 	width: auto;
-	padding: 30px;
+	padding: 30px 10px;
 }
 
 .fc-calendar .fc-head {
@@ -281,6 +284,8 @@
 
 .fc-calendar .fc-row > div:not(:empty) {
 	cursor: pointer;
+	border-radius: 1px;
+	box-shadow: 0 0 0 1px rgba(230, 154, 7, 0);
 }
 
 .fc-calendar .fc-row > div > span.fc-date {
